@@ -4,7 +4,7 @@ int digit_count(long num);
 int checksum(long num);
 int sub_digit(int num);
 bool check_valid(int digits);
-int start_second_num(long num);
+int start_two_num(long num);
 int start_first_num(long num);
 
 
@@ -18,14 +18,13 @@ int main(void) {
         //American Express uses 15-digit numbers, numbers start with 34 or 37
         //MasterCard uses 16-digit numbers, numbers start with 51, 52, 53, 54, or 55
         //Visa uses 13- and 16-digit numbers, numbers start with 4
-        int start_num = start_second_num(num);
         int digits_num = digit_count(num);
         //check if American Express
-        if(digits_num == 15 & start_num == 34 || start_num == 37){
+        if(digits_num == 15 & start_two_num(num) == 34 || start_two_num(num) == 37){
             printf("AMEX\n");      
         }
         //check if MasterCard
-        else if(digits_num == 16 & start_num == 51 || start_num == 52 || start_num == 53 || start_num == 54 || start_num == 55){
+        else if(digits_num == 16 & start_two_num(num) == 51 || start_two_num(num) == 52 || start_two_num(num) == 53 || start_two_num(num) == 54 || start_two_num(num) == 55){
             printf("MASTERCARD\n");
         } 
         //check if Visa 
@@ -65,9 +64,11 @@ int checksum(long num){
         //sum of every other digits Multiply by 2, starting with the number’s second-to-last digit
         if(count%2 != 0){
             product *= temp;
+            // if products' digit > 9 use sub digi function to sum them
             if(product > 9){
                 sum += sub_digit(product);
-            } else {
+            } 
+            else {
                sum += product; 
             }          
         } 
@@ -105,7 +106,7 @@ bool check_valid(int digits){
 }
 
 //get start numbers for American Express and MasterCard
-int start_second_num(long num){
+int start_two_num(long num){
     while(num > 99){
         num/=10;
     }
@@ -119,4 +120,3 @@ int start_first_num(long num){
     }
     return num;
 }
-
