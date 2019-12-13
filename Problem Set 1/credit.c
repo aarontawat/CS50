@@ -64,7 +64,7 @@ int checksum(long num){
         //sum of every other digits Multiply by 2, starting with the number’s second-to-last digit
         if(count%2 != 0){
             product *= temp;
-            // if products' digit > 9 use sub digi function to sum them
+            // if products' digit > 9 use sub digit function to sum them
             if(product > 9){
                 sum += sub_digit(product);
             } 
