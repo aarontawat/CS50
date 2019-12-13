@@ -1,3 +1,12 @@
+/********************************************************
+*   Title : Credit                                      *
+*   Author: Aaron tawat                                 *
+*   This is a C program that allows you to              *
+*   check if a given credit card number                 *
+*   is a Visa, American Express, or MasterCard.         *
+*********************************************************/
+
+
 #include <cs50.h>
 #include <stdio.h>
 int digit_count(long num);
