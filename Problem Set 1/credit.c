@@ -1,9 +1,9 @@
 /********************************************************
-*   Title : Credit                                      *
-*   Author: Aaron tawat                                 *
-*   This is a C program that allows you to              *
-*   check if a given credit card number                 *
-*   is a Visa, American Express, or MasterCard.         *
+* Title : Credit                                      *
+* Author: Aaron tawat                                 *
+* This is a C program that allows you to              *
+* check if a given credit card number                 *
+* is a Visa, American Express, or MasterCard.         *
 *********************************************************/
 
 
