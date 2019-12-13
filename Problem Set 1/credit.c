@@ -10,7 +10,7 @@ int start_first_num(long num);
 
 int main(void) {
     long num = get_long("Number: ");
-    //  check sums' digits use Luhn’s Algorithm
+    //  get sums' digits 
     int sum_digits = checksum(num);
     //check if last digit in that sum is a 0, so a card is legit
     bool valid = check_valid(sum_digits);
