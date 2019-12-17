@@ -3,8 +3,6 @@
 #include <string.h>
 #include <ctype.h>
 
-char map(string text, string key);
-
 
 int main(int argc, string argv[]){
     //Check if program is executed without any command-line arguments or with more than one command-line argument,
