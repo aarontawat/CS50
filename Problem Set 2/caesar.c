@@ -4,7 +4,6 @@
 #include <ctype.h>
 #include <string.h>
 
-string shift(string text, int key);
 
 int main(int argc, string argv[]){
     //Check if program is executed without any command-line arguments or with more than one command-line argument,
