@@ -34,7 +34,6 @@ int main(int argc, string argv[]){
     //substituted for the corresponding character
     char c;
     string alphabet = "abcdefghijklmnopqrstuvwxyz";
-    //VCHPRZGJNTLSKFBDQWAXEUYMOI
     for(int i = 0; i < strlen(text); i++){
         int index = 0;
         for(int j = 0; j < strlen(alphabet); j++){
